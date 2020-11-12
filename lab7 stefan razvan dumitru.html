@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+  <style>
+
+h1{color:blue;
+    font-family: courier;
+    font-size: 200%;}
+
+h2{color:blue;
+    font-family:courier;
+    font-size:200%}
+
+h3{color:blue;
+  font-family: courier;
+  font-size:200%;}
+
+img{border-radius:30px;
+    weight:550px;
+    height:380px;
+    opacity: 0.9;}
+
+body{background-color: rgb(243, 255, 176);}
+
+
+</style>
+
+<script>
+function profil()
+{
+document.getElementById("h1").innerHTML="Ciprian Eugen Voda";
+document.getElementById("h1").style.fontFamily="Charcoal";
+document.getElementById("demo").innerHTML="Realizari";
+document.getElementById("demo").style.fontFamily="Charcoal";
+document.getElementById("d1").innerHTML="1.Realizarea unui short film";
+document.getElementById("d2").innerHTML="2.Absolvirea liceului";
+document.getElementById("d3").innerHTML="3.Admiterea la facultate";
+document.getElementById("ho").innerHTML="Dorinte";
+document.getElementById("ho").style.fontFamily="Charcoal";
+document.getElementById("ho1").innerHTML="pescuitul";
+document.getElementById("ho2").innerHTML="manacatul";
+document.getElementById("ho3").innerHTML="filmele";
+document.getElementById("IMG_4364.jpg").src = "IMG2.jpg";
+document.getElementById("ho3").innerHTML="filmele";
+document.getElementById("IMG_4364.jpg").style.opacity="0.8";
+document.body.style.background = "#f09960";
+}
+function varsta()
+{
+  var azi=new Date;
+  var VarstaMea;
+
+  var nasc=document.getElementById("varsta").innerHTML;
+  var curent=azi.getFullYear();
+
+  VarstaMea=curent-parseInt(nasc);
+  document.getElementById("varsta").innerHTML=VarstaMea;
+
+}
+</script>
+
+</head>
+<body>
+
+<h1 id="h1">Stefan Razvan Dumitru</h1>
+<p onmouseover="varsta()" id="varsta">2001</p>
+<p>stefanrazvan01@yahoo.com</p>
+<img id="IMG_4364.jpg" src="IMG_4364.jpg" alt="profil">
+<p>"Odata ce ai invatat sa citesti, vei fi liber pentru totdeauna." -Frederick Douglas</p>
+
+<h2 id="demo"> Discipline:</h2>
+<p id="d1">1.Programarea calculatoarelor <a href="https://etti.utcluj.ro/files/FiseDisciplina/TstRo/EL3104.pdf">fisa</a> </p>
+<p id="d2">2.Circuite si componente electronice <a href="https://etti.utcluj.ro/files/FiseDisciplina/TstRo/EL3105.pdf">fisa</a> </p>
+<p id="d3">3.Informatica aplicata <a href="https://etti.utcluj.ro/files/FiseDisciplina/TstRo/EL3106.pdf">fisa</a> </p>
+<button type="button" onclick="profil()">schimba viata</button>
+
+<h3 id="ho">Hobby-uri:</h3>
+<table style="width:50%">
+
+    <p id="ho1">fotografia</p>
+    <p id="ho2">videografia</p>
+    <p id="ho3">editatul</p>
+    <br>
+
+<a href="file:///Volumes/LACIE/Atom/lab6/catalog.html">catalog</a> </p>
+
+</body>
+</html>
